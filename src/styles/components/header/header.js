@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
 const BlockHeader = styled('header')`
+  position: sticky;
   display: flex;
   align-items: center;
   min-height: 64px;

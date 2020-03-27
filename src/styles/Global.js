@@ -148,22 +148,7 @@ export default function GlobalStyle() {
 
         .main-container {
           position: relative;
-
-          &:before {
-            content: '';
-            z-index: 995;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            transition: background-color 0.5s cubic-bezier(0.4, 0, 1, 1);
-          }
-          &.loaded {
-            &:before {
-              background-color: transparent;
-              z-index: -1;
-            }
-          }
+          margin-top: ${theme.columnGap};
         }
 
         img {
@@ -180,10 +165,6 @@ export default function GlobalStyle() {
           max-width: ${theme.maxWidth};
           margin-left: auto;
           margin-right: auto;
-          ${mediaQueries.tabletteHorizontale} {
-            width: 100%;
-            padding: 0 5%;
-          }
         }
       `}
     />

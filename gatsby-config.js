@@ -32,13 +32,18 @@ module.exports = {
       resolve: `gatsby-plugin-emotion`,
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          `Ubuntu`,
-          `Open Sans`, // you can also specify font weights and styles
+          {
+            family: `Open Sans`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Ubuntu`,
+            variants: [`300`, `400`],
+          },
         ],
-        display: 'swap',
       },
     },
     `gatsby-transformer-sharp`,
@@ -52,7 +57,7 @@ module.exports = {
         background_color: `#230066`,
         theme_color: `#230066`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-main.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

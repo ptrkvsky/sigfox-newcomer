@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Welcome from '../components/pages/home/Welcome'
 
 import Layout from '../components/Layout'
 
@@ -9,8 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="max-container">
-      <h1>Hi people</h1>
-      <p>Welcome to the new comers.</p>
+      <Welcome />
     </div>
   </Layout>
 )

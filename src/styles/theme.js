@@ -14,7 +14,7 @@ const theme = {
     button: '16px',
   },
   columnGap: '30px',
-  maxWidth: '1260px',
+  maxWidth: '960px',
 }
 
 export default theme
