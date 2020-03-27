@@ -133,6 +133,12 @@ export default function GlobalStyle() {
           border-collapse: collapse;
           border-spacing: 0;
         }
+        /* -------------- */
+        /*  TWEAK GATSBY  */
+        /* -------------- */
+        .tl-edges {
+          min-height: 100vh;
+        }
 
         /* ------------- */
         /* STYLES GLOBAL */
