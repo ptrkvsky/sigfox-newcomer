@@ -162,7 +162,8 @@ export default function GlobalStyle() {
 
         /* HELPERS */
         .max-container {
-          max-width: ${theme.maxWidth};
+          width: ${theme.maxWidth};
+          max-width: 100%;
           margin-left: auto;
           margin-right: auto;
         }

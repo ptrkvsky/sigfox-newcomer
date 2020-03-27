@@ -6,10 +6,12 @@ import logoMain from '../../images/logo-main.svg'
 const Header = () => (
   <>
     <BlockHeader>
-      <BlockLogo>
-        <span className="brand">Sigfox</span>
-        <span className="tag-line">Newcomer</span>
-      </BlockLogo>
+      <div className="max-container">
+        <BlockLogo>
+          <span className="brand">Sigfox</span>
+          <span className="tag-line">Newcomer</span>
+        </BlockLogo>
+      </div>
     </BlockHeader>
   </>
 )
