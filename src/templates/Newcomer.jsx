@@ -25,10 +25,10 @@ const Newcomer = ({ data }) => {
         <img src={profil.url} alt={profil.alt} />
         <h2>Video de presentation</h2>
         <iframe
-          title="ok "
+          title={first_name}
           width="560"
           height="315"
-          src={video_presentation.embed_url}
+          src="https://www.youtube.com/embed/3KL0v7Z_-I8"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
