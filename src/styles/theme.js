@@ -3,6 +3,7 @@ const theme = {
     main: '#0c0c0c',
     primary: '#230066',
     separator: '#d5dae3',
+    lilac: '#8024ff',
   },
   bg: {
     main: '#FFF',

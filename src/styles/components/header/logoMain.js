@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logoMain from '../../../images/logo-main.svg'
 import theme from '../../theme'
 
-const BlockLogo = styled('div')`
+const BlockLogo = styled(AniLink)`
   background-image: url(${logoMain});
   background-repeat: no-repeat;
   padding-left: 52px;
