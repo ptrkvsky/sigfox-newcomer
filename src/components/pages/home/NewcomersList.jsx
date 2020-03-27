@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { BlockNewComers } from '../../../styles/components/pages/home/listnewcomers'
+import { BlockNewComers } from '../../../styles/components/pages/home/newcomersList'
 import NewcommersDetail from './NewcomersDetail'
 
 const NewcomersList = ({ newCommers }) => (

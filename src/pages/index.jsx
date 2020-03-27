@@ -35,6 +35,9 @@ export const query = graphql`
             profil
             video_presentation
             _linkType
+            _meta {
+              uid
+            }
           }
         }
       }

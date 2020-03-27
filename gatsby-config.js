@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     {
       resolve: 'gatsby-source-prismic-graphql',
       options: {
@@ -20,11 +21,9 @@ module.exports = {
         defaultLang: 'en-us', // optional, but recommended
         accessToken:
           'MC5YbjRIQVJJQUFET3VxX1c3.C--_ve-_vQEX77-9Mz4BNlx1KXVm77-9Yu-_vQvvv73vv706Ee-_vU3vv71v77-9Ce-_vSDvv70', // optional
-        path: '/preview', // optional, default: /preview
-        previews: true, // optional, default: false
         sharpKeys: [
           /image|photo|picture/, // (default)
-          'profilepic',
+          'profil',
         ],
       },
     },
@@ -46,6 +45,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
