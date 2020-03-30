@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import theme from '../../../styles/theme'
 
 import {
   BlockNewComer,
@@ -13,9 +14,8 @@ const NewcommersDetail = ({ newCommer }) => {
   return (
     <BlockNewComer>
       <AniLink
-        swipe
-        top="entry"
         style={{ overflow: 'hidden' }}
+        cover={theme.colors.lilac}
         to={`newcomer/${newCommer.node._meta.uid}`}
       >
         <img
