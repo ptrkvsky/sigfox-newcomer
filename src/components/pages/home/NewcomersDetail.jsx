@@ -12,9 +12,14 @@ const NewcommersDetail = ({ newCommer }) => {
   const { first_name, last_name, profil } = newCommer.node
   return (
     <BlockNewComer>
-      <AniLink swipe top="entry" to={`newcomer/${newCommer.node._meta.uid}`}>
+      <AniLink
+        swipe
+        top="entry"
+        style={{ overflow: 'hidden' }}
+        to={`newcomer/${newCommer.node._meta.uid}`}
+      >
         <img
-          style={{ filter: "blur('5px')" }}
+          style={{ filter: 'blur(5px)' }}
           src={profil.url}
           alt={last_name + first_name}
         />

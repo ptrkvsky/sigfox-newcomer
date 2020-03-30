@@ -4,6 +4,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import { GridNewcomer } from '../styles/components/templates/newcomer'
 
 import SEO from '../components/seo'
 
@@ -13,22 +14,23 @@ const Newcomer = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="max-container">
-        <h1>
-          Welcome to {first_name} {last_name}
-        </h1>
+      <GridNewcomer className="max-container">
+        <div>
+          <h1>
+            Welcome to {first_name} {last_name}
+          </h1>
+          <iframe
+            title={first_name}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3KL0v7Z_-I8"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
         <img src={profil.url} alt={profil.alt} />
-        <h2>Video de presentation</h2>
-        <iframe
-          title={first_name}
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/3KL0v7Z_-I8"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
+      </GridNewcomer>
     </Layout>
   )
 }
