@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import {
   GridNewcomer,
   TitleNewcomer,
+  DescNewcomer,
 } from '../styles/components/templates/newcomer'
 
 import SEO from '../components/seo'
@@ -20,22 +21,33 @@ const Newcomer = ({ data }) => {
       <GridNewcomer className="max-container">
         <div>
           <TitleNewcomer>
-            Welcome to {first_name} {last_name}
+            {first_name} {last_name}
           </TitleNewcomer>
-          <iframe
-            title={first_name}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/3KL0v7Z_-I8"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <DescNewcomer>
+            On the other hand, we denounce with righteous indignation and
+            dislike men who are so beguiled and demoralized by the charms of
+            pleasure of the moment, so blinded by desire, that they cannot
+            foresee the pain and trouble that are bound to ensue; and equal
+            blame belongs to those who fail in their duty through weakness of
+            will, which is the same as saying through shrinking from toil and
+            pain.
+          </DescNewcomer>
         </div>
         <div>
           <img src={profil.url} alt={profil.alt} />
         </div>
       </GridNewcomer>
+      <div className="max-container">
+        <iframe
+          title={first_name}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/3KL0v7Z_-I8"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
     </Layout>
   )
 }

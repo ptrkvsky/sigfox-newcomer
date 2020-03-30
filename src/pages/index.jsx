@@ -10,7 +10,7 @@ import SEO from '../components/seo'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    {/* <SEO title="Home" /> */}
     <div className="max-container">
       <Welcome />
       <ListNewComers newCommers={data.prismic.allNewcos.edges} />
