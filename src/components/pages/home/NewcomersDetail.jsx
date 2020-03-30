@@ -19,7 +19,7 @@ const NewcommersDetail = ({ newCommer }) => {
         to={`newcomer/${newCommer.node._meta.uid}`}
       >
         <img
-          style={{ filter: 'blur(5px)' }}
+          style={{ filter: 'blur(8px)' }}
           src={profil.url}
           alt={last_name + first_name}
         />

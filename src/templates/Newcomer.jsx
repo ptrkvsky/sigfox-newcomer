@@ -4,7 +4,10 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import { GridNewcomer } from '../styles/components/templates/newcomer'
+import {
+  GridNewcomer,
+  TitleNewcomer,
+} from '../styles/components/templates/newcomer'
 
 import SEO from '../components/seo'
 
@@ -16,9 +19,9 @@ const Newcomer = ({ data }) => {
       <SEO title="Home" />
       <GridNewcomer className="max-container">
         <div>
-          <h1>
+          <TitleNewcomer>
             Welcome to {first_name} {last_name}
-          </h1>
+          </TitleNewcomer>
           <iframe
             title={first_name}
             width="560"
@@ -29,7 +32,9 @@ const Newcomer = ({ data }) => {
             allowFullScreen
           ></iframe>
         </div>
-        <img src={profil.url} alt={profil.alt} />
+        <div>
+          <img src={profil.url} alt={profil.alt} />
+        </div>
       </GridNewcomer>
     </Layout>
   )
