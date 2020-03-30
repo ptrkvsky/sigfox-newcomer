@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+
 import theme from '../../../theme'
 
-const BlockNewComer = styled(AniLink)`
+const BlockNewComer = styled('div')`
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -15,7 +15,7 @@ const BlockNewComer = styled(AniLink)`
   }
 `
 
-const BlockDesc = styled(AniLink)`
+const BlockDesc = styled('div')`
   padding: 2rem;
 `
 
