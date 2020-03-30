@@ -17,7 +17,7 @@ const Newcomer = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      {/* <SEO title="Home" /> */}
       <GridNewcomer className="max-container">
         <div>
           <TitleNewcomer>
