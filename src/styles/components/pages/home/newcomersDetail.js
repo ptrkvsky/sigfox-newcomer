@@ -4,7 +4,8 @@ import theme from '../../../theme'
 
 const BlockNewComer = styled(AniLink)`
   display: flex;
-  padding: 15px;
+  flex-direction: column;
+  padding: 0;
   border-radius: 4px;
   border: 1px solid ${theme.colors.separator};
   transition: box-shadow 300ms ease-in 0s;
@@ -14,4 +15,8 @@ const BlockNewComer = styled(AniLink)`
   }
 `
 
-export { BlockNewComer }
+const BlockDesc = styled(AniLink)`
+  padding: 2rem;
+`
+
+export { BlockNewComer, BlockDesc }

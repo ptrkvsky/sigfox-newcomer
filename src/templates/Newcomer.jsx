@@ -8,13 +8,8 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
 const Newcomer = ({ data }) => {
-  const {
-    first_name,
-    last_name,
-    profil,
-    video_presentation,
-  } = data.prismic.newco
-  console.log(data.prismic.newco)
+  const { first_name, last_name, profil } = data.prismic.newco
+
   return (
     <Layout>
       <SEO title="Home" />
