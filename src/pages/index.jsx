@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Welcome from '../components/pages/home/Welcome'
@@ -9,8 +9,14 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
 const IndexPage = ({ data }) => (
+  /*
+  useEffect(() => {
+    window.localStorage.setItem('name', 'Obaseki Nosa')
+    console.log(window.localStorage.getItem('name'))
+  }, [])
+  */
+
   <Layout>
-    {/* <SEO title="Home" /> */}
     <div className="max-container">
       <Welcome />
       <ListNewComers newCommers={data.prismic.allNewcos.edges} />

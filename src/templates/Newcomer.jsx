@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
@@ -14,6 +14,11 @@ import SEO from '../components/seo'
 
 const Newcomer = ({ data }) => {
   const { first_name, last_name, profil } = data.prismic.newco
+  const { uid } = data.prismic.newco._meta
+
+  useEffect(() => {
+    window.localStorage.setItem(uid, true)
+  }, [uid])
 
   return (
     <Layout>
@@ -65,7 +70,9 @@ export const pageQuery = graphql`
         last_name
         profil
         video_presentation
-        _linkType
+        _meta {
+          uid
+        }
       }
     }
   }
